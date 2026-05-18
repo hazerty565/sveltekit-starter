@@ -8,6 +8,13 @@ Voici la nouvelle structure de fichiers :
 
 ```
 mon-projet/
+├── .env.example
+├── .gitignore
+├── node_modules/
+├── package.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+├── README.md
 ├── src/
 │   ├── lib/
 │   │   ├── auth/
@@ -22,13 +29,11 @@ mon-projet/
 │   └── routes/
 │       ├── (auth)/
 │       └── (dashboard)/
+├── svelte.config.js
+├── tailwind.config.js
 ├── tests/
-├── node_modules/
-├── package.json
-├── package-lock.json
-├── pnpm-lock.yaml
-├── pnpm-workspace.yaml
-└── README.md
+├── tsconfig.json
+└── vite.config.ts
 ```
 
 ## Getting Started
