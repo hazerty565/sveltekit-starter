@@ -4,16 +4,32 @@ This is a [SvelteKit](https://kit.svelte.dev/) project.
 
 ## Structure de Fichiers
 
-Le projet est maintenant structuré en monorepo en utilisant `pnpm-workspace.yaml`. Voici la nouvelle structure de fichiers :
+Voici la nouvelle structure de fichiers :
 
-- `packages/` : Contient tous les paquets du projet.
-  - `<nom-du-paquet>/` : Chaque paquet a sa propre structure de projet SvelteKit.
-    - `src/`
-      - `lib/`
-      - `routes/`
-    - `package.json`
-    - `...`
-- `pnpm-workspace.yaml` : Fichier de configuration pour l'espace de travail pnpm.
+```
+mon-projet/
+├── src/
+│   ├── lib/
+│   │   ├── auth/
+│   │   ├── components/
+│   │   │   └── ui/
+│   │   ├── i18n/
+│   │   ├── server/
+│   │   │   └── supabase/
+│   │   ├── stores/
+│   │   ├── utils/
+│   │   └── validators/
+│   └── routes/
+│       ├── (auth)/
+│       └── (dashboard)/
+├── tests/
+├── node_modules/
+├── package.json
+├── package-lock.json
+├── pnpm-lock.yaml
+├── pnpm-workspace.yaml
+└── README.md
+```
 
 ## Getting Started
 
