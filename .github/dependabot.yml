@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Configuration pour les dépendances npm/pnpm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly" # Vérification chaque semaine (tu peux mettre "daily" ou "monthly")
+    open-pull-requests-limit: 5 # Évite d'être inondé de demandes en même temps
+    
+  # Configuration pour les actions GitHub (si tu en ajoutes plus tard)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
